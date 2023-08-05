@@ -20,7 +20,7 @@
  * @copyright 2023 Manfred Hoffmann
  * @author Manfred Hoffmann <oss@manne65-hd.de>
  * @license GPLv3
- * @version 0.5.0-BETA 
+ * @version 0.5.1-BETA 
  * @link https://github.com/manne65-hd/F3-Dumper
  * 
  **/
@@ -29,7 +29,7 @@
 
  class F3Dumper {
     /** @var string Contains the current version tag of the F3Dumper-class */
-    const VERSION='0.5.0-BETA';
+    const VERSION='0.5.1-BETA';
 
     /** @var string Default CSS-span-style for boolean:TRUE */
     const CSS_SPAN_TRUE = 'background-color: green; color: white; font-weight: bolder;';
@@ -130,7 +130,7 @@
      */
     public function getPackageInfo() {
         // Read package-info from composer.json into an array
-        $pkg_composer_json = json_decode(file_get_contents('../vendor/manne65hd/f3_dumper/composer.json'), JSON_OBJECT_AS_ARRAY );
+        $pkg_composer_json = json_decode(file_get_contents('../vendor/manne65hd/f3-dumper/composer.json'), JSON_OBJECT_AS_ARRAY );
 
         return array(
             'pkg_fullname'      => $pkg_composer_json['name'],
