@@ -1,0 +1,19 @@
+{
+    "name": "manne65hd/f3-dumper",
+    "description": "A simple dumper for the PHP FatFreeFramework",
+    "type": "library",
+    "require": {
+        "bcosca/fatfree-core": "^3.8"
+    },
+    "license": "GPL-3.0",
+    "autoload": {
+        "classmap": ["lib/"]    
+      },
+    "authors": [
+        {
+            "name": "Manfred Hoffmann",
+            "email": "oss@manne65-hd.de"
+        }
+    ],
+    "minimum-stability": "dev"
+}
